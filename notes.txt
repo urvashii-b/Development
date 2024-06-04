@@ -1,0 +1,66 @@
+COHORT NOTES
+
+WEEK - 0
+
+A browser is an application program that provides a way to look at and interact with all the information on the World Wide Web.
+
+The browser's rendering engine interprets and renders the code to display the web page on the user's device. The CSS stylesheets are applied to format the web page's content, including fonts, colors, and layout. The browser may also execute JavaScript code on the web page to add interactivity and dynamic behavior.
+
+HTML defines the structure of the website (jargons - tags and attributes {help in defining what that specific tag should do})
+CSS helps you in adding styles to your website + position things on the page
+(OUT TO IN) margin {outside} -> border -> padding {inside}
+common styling attributes: color, background, border-radius, border, padding/margin, box-shadow (format - px px px color)
+
+dumb way of positioning content - float, right way - flex box (parent should have display attribute as flex) {JUSTIFY-CONTENT....flex-start: all left, flex-end: all right, center: all middle, space-between: all children equally spaced}
+
+cursor: pointer - to have an arrow that might go to some other link or do an action
+use <div style="display: flex; justify-content: center;"></div> instead of <center></center>
+
+WEEK - 1
+
+Computers: everything that is running (zoom calls, netflix) - RAM, everything that is not running (photos, videos) - SSD
+
+Compilers (heavy lifting) convert high level code to 0s and 1s for the computers to understand (SSD ---> RAM)
+
+Different languages are used to write applications for different purposes 
+
+C++ - compiled language (cannot run if there are errors - first compile everything then run)
+it is strict
+g++ a.cpp -o temp
+./temp
+share temp with people so then they can see the output but not your source code
+
+JavaScript - interpreted language (can run partially - line by line)
+we can change datatypes - dynamic
+node a.js
+
+HTML, CSS, JS - standard to create websites
+NodeJS - Backend development
+
+single threaded nature of JS - 1 core of machine will be used at a time (bad for scalable systems, solution - cluster module to paralllelize javascript processes)
+context switching - not every process running on my machine needs the CPU at all times
+
+ways to define variables - var, let, const (safety - doesnt let you change)
+
+BOUNTY
+let sum = 0;
+for(let i=0;i<100000000;i++){
+	sum = sum+i;
+}
+
+setTimeout(function, time after which function should be called) & setInterval()
+
+process.stdout.write('\x1Bc'); ---> to clear everything on terminal
+
+classes give a structure for something that is reusable and used in multiple places
+static associated to class not objects so can be called on a class, but normal functions can be called on objects
+
+JSON is a way to send data to other people (all in one string)
+
+callback functions - call one function inside another function's argument
+anonymous function - function doesn't have a name (pass the whole logic of the subfunction as arg without a name)
+
+synchronous - sequential (one by one, ex: cooking maggi stepwise)
+asynchronous - multiple things context switching with each other & delegating (parallel)
+ex: setTimeout, fs.readFile, Fetch (data from API endpoint)
+busy waiting to make asynchronous function -> synchronous function (calls an expensive operation)
