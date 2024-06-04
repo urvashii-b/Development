@@ -64,3 +64,11 @@ synchronous - sequential (one by one, ex: cooking maggi stepwise)
 asynchronous - multiple things context switching with each other & delegating (parallel)
 ex: setTimeout, fs.readFile, Fetch (data from API endpoint)
 busy waiting to make asynchronous function -> synchronous function (calls an expensive operation)
+
+javascript architecture - call stack, web apis, callback queue, event loop
+
+callbacks make sense for async functions
+
+A Promise is an object representing the eventual completion or failure of an asynchronous operation.
+promises are syntactic sugar that make code look slightly more readable
+ugly way - a wrapper on top of async function
